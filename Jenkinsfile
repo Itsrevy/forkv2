@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
-                sh 'brew install gcc'
+                sh '/opt/homebrew/bin/brew install gcc'
             }
         }
         stage('Build') {
