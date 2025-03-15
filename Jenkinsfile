@@ -16,12 +16,5 @@ pipeline {
                 sh './pizza'
             }
         }
-        stage('Deploy') {
-            steps {
-                sshagent(credentials: ['docker-ssh-key']) {
-                    sh 'scp ./pizza abc@localhost:/home/abc/deploy -P 2222'
-                }
-            }
-        }
     }
 }
