@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
-                sh 'apt-get update && apt-get install -y g++'
+                sh 'brew install gcc'
             }
         }
         stage('Build') {
