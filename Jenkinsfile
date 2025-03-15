@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
-                sh 'sudo apt-get update && sudo apt-get install -y g++'
+                sh 'apt-get update && apt-get install -y g++'
             }
         }
         stage('Build') {
