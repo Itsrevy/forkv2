@@ -5,7 +5,7 @@ using namespace std;
 //*****************************************************************************************************
 
 int main() {
-    const double PIZZA = 30.50,
+    const double PIZZA = 40.50,
                  SODA = 2.00,
                  CHICKEN_NUGGETS = 7.00,
                  BREADSTICKS = 9.75;
